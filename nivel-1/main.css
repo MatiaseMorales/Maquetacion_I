@@ -1,0 +1,267 @@
+* {
+    max-width: 1200px;
+    box-sizing: content-box;
+}
+
+body {
+    margin: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    background-color: rgb(243, 214, 49);
+    border: black 15px solid;
+}
+
+header div {
+    background-color: rgb(241, 89, 89);
+    margin: 15px;
+}
+
+.div-tamaño1 {
+    width: 150px;
+}
+
+.div-tamaño2 {
+    width: 750px;
+    height: 20px;
+}
+
+.contenedor1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(54, 54, 107);
+    border: black solid 15px;
+    border-bottom: 10px black solid;
+    margin: 0;
+}
+
+.contenedor2 {
+    background-color: orange;
+    margin: 0;
+    border: solid black 15px;
+    border-top: 10px;
+}
+
+.contenedor2 div {
+    background-color: yellow;
+    margin: 15px;
+    height: 20px;
+}
+
+.section-container-div1 {
+    border: 15px black solid;
+    border-right: px;
+    width: 75%;
+    background-color: rgb(73, 73, 112);
+}
+
+.div-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div-section div {
+    background-color: rgb(70, 70, 189);
+    height: 20px;
+    margin: 15px;
+    width: 46%;
+    margin-bottom: 0;
+}
+
+.divlargosection {
+    background-color: rgb(127, 127, 247);
+    height: 20px;
+    margin: 15px;
+}
+
+.section-container-div2 {
+    border: 15px black solid;
+    border-left: 10px;
+    width: 25%;
+    background-color: rgb(241, 89, 89);
+}
+
+.section-container-div2 div {
+    background-color: yellow;
+    height: 20px;
+    margin: 15px;
+}
+
+.footer-container {
+    margin-bottom: 20px;
+    height: 20px;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+
+/*@media (min-width: 1281px) {
+    /* CSS 
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+
+/*
+@media (min-width: 1025px) and (max-width: 1280px) {
+    CSS 
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    section {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-container-div1 {
+        border: 15px rgb(243, 230, 49) solid;
+        border-right: px;
+        background-color: rgb(73, 73, 112);
+        width: auto;
+    }
+    .section-container-div2 {
+        border: 15px rgb(243, 230, 49) solid;
+        width: auto;
+        background-color: rgb(241, 89, 89);
+    }
+    .div-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+        flex-wrap: nowrap;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+
+/*
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+
+/*
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS 
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 120px) and (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .contenedor2 {
+        background-color: orange;
+        margin: 0;
+        border: solid black 15px;
+        border-top: 10px;
+        width: auto;
+    }
+    .contenedor2 div {
+        background-color: yellow;
+        margin: 15px;
+        height: 20px;
+        width: auto;
+    }
+    .contenedor1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(54, 54, 107);
+        border: black solid 15px;
+        border-bottom: 10px black solid;
+        width: auto;
+    }
+    .div-tamaño1 {
+        width: auto;
+        height: 20px;
+    }
+    .div-tamaño2 {
+        width: auto;
+        height: 20px;
+    }
+    .div-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .div-section div {
+        background-color: rgb(70, 70, 189);
+        height: 20px;
+        margin: 15px;
+        width: auto;
+        margin-bottom: 0;
+    }
+    .divlargosection {
+        background-color: rgb(127, 127, 247);
+        height: 20px;
+        margin: 15px;
+        width: auto;
+    }
+    section {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-container-div1 {
+        border: 15px rgb(243, 230, 49) solid;
+        width: auto;
+        background-color: rgb(73, 73, 112);
+    }
+    .section-container-div2 {
+        border: 15px rgb(243, 230, 49) solid;
+        width: auto;
+        background-color: rgb(241, 89, 89);
+    }
+    .section-container-div2 div {
+        background-color: yellow;
+        height: 20px;
+        margin: 15px;
+        width: auto;
+    }
+}
